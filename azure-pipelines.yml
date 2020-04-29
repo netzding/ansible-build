@@ -26,6 +26,7 @@ steps:
     command: build
     repository: $(dockerImage)
     tags: $(dockerTag)
+    arguments: --build-arg ALPINE_TAG=3.10
 
 - task: Docker@2
   displayName: Push
