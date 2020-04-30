@@ -9,7 +9,9 @@ RUN apk --no-cache add \
       rsync \
       openssh-client \
       python2 \
+      py-pip \
       py3-netaddr \
       ansible \
-      ansible-lint \
+      ansible-lint
 
+RUN apk --no-cache add --virtual build-deps python-dev build-base wget && pip install pysphere && apk del build-deps
