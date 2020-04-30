@@ -8,6 +8,7 @@ RUN apk --no-cache add \
       make \
       rsync \
       openssh-client \
+      python2 \
       py3-netaddr \
       ansible \
       ansible-lint \
