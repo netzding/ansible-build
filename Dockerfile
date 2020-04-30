@@ -10,8 +10,9 @@ RUN apk --no-cache add \
       openssh-client \
       python2 \
       py-pip \
+      py2-requests \
       py3-netaddr \
       ansible \
       ansible-lint
+RUN pip install --upgrade pyvmomi
 
-RUN apk --no-cache add --virtual build-deps python-dev build-base wget && pip3 install pysphere && apk del build-deps
