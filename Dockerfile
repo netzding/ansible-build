@@ -14,4 +14,4 @@ RUN apk --no-cache add \
       ansible \
       ansible-lint
 
-RUN apk --no-cache add --virtual build-deps python-dev build-base wget && pip install pysphere && apk del build-deps
+RUN apk --no-cache add --virtual build-deps python-dev build-base wget && pip3 install pysphere && apk del build-deps
