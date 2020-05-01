@@ -14,5 +14,5 @@ RUN apk --no-cache add \
       py3-netaddr \
       ansible \
       ansible-lint
-RUN pip install --upgrade pyvmomi
+RUN pip install --upgrade pyvmomi jmespath
 
