@@ -12,8 +12,7 @@ RUN apk --no-cache add \
       py-pip \
       py2-requests \
       py3-netaddr \
-      py3-jmespath \
       ansible \
       ansible-lint
-RUN pip install --upgrade pyvmomi jmespath
+RUN pip install --upgrade pyvmomi jmespath && pip3 install --upgrade pyvmomi jmespath
 
